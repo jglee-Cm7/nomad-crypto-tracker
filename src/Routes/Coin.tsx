@@ -40,11 +40,13 @@ const Header = styled.div`
 
 const Title = styled.h1`
   font-size: 36px;
+  font-weight: 600;
   color: ${(props) => props.theme.accentColor};
 `;
 
 const Overview = styled.div`
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: ${(props) => props.theme.sectionBgColor};
+  box-shadow: rgb(10 10 10 / 10%) 0px 0.2rem 0.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -76,7 +78,8 @@ const Tabs = styled.div`
 const Tab = styled.span<{ isActive: boolean }>`
   text-align: center;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: ${(props) => props.theme.sectionBgColor};
+  box-shadow: rgb(10 10 10 / 10%) 0px 0.2rem 0.5rem;
   padding: 7px 0px;
   border-radius: 10px;
   color: ${(props) =>

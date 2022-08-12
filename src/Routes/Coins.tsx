@@ -26,7 +26,8 @@ const CoinList = styled.ul``;
 
 const Coin = styled.li`
   background-color: white;
-  color: ${(props) => props.theme.bgColor};
+  box-shadow: rgb(10 10 10 / 10%) 0px 0.2rem 0.5rem;
+  color: black;
   border-radius: 15px;
   margin-bottom: 10px;
   a {
@@ -49,6 +50,7 @@ const Coin = styled.li`
 
 const Title = styled.h1`
   font-size: 36px;
+  font-weight: 600;
   color: ${(props) => props.theme.accentColor};
 `;
 

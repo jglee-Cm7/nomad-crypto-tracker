@@ -6,7 +6,8 @@ import { MdTrendingFlat, MdTrendingUp, MdTrendingDown } from "react-icons/md";
 const Container = styled.div``;
 
 const Overview = styled.div`
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: ${(props) => props.theme.sectionBgColor};
+  box-shadow: rgb(10 10 10 / 10%) 0px 0.2rem 0.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -38,7 +39,8 @@ const SectionList = styled.div`
 const Section = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: ${(props) => props.theme.sectionBgColor};
+  box-shadow: rgb(10 10 10 / 10%) 0px 0.2rem 0.5rem;
   padding: 1.3rem;
   border-radius: 10px;
   justify-content: space-between;
